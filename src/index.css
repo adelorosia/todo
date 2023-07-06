@@ -6,7 +6,7 @@
 
 :root {
   font-family: "Poppins", sans-serif;
-  background-color: #252a36;
+
   color: #f8f8f2;
   line-height: 1.5;
 }
@@ -15,8 +15,12 @@
   .list-style{
     @apply bg-slate-400 px-5 py-3 border-b-white border-b last:border-none flex items-center justify-between text-gray-600 font-bold 
   }
+  .btn-color-style{
+  @apply px-8 py-2 cursor-pointer text-BACKGROUND rounded-xl border
+  }
 }
 
 button{
   all: unset;
 }
+

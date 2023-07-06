@@ -23,9 +23,9 @@ const TopForm = () => {
       <h1 className="text-center m-4 text-xl font-bold">
         Welcome To Todo List
       </h1>
-      <div className="bg-white rounded-lg">
+      <div className="bg-white rounded-lg flex justify-between">
         <input
-          className=" py-2 outline-none rounded-l-lg text-slate-800 px-5"
+          className=" py-2 outline-none rounded-l-lg text-slate-800 px-5 w-4/6"
           placeholder="Schreib dein Task"
           type="text"
           value={task}

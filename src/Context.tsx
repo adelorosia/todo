@@ -17,7 +17,7 @@ interface IApp {
   setColor: React.Dispatch<React.SetStateAction<Color>>;
   isButtonActive:boolean
   setIsButtonActive: React.Dispatch<React.SetStateAction<boolean>>;
-  changeColor:React.Dispatch<React.SetStateAction<any>>
+  changeColor:React.Dispatch<React.SetStateAction<Color>>
 }
 
 interface IAppProvider {
@@ -31,7 +31,7 @@ export const AppContextProvider: React.FC<IAppProvider> = ({ children }) => {
   const [task, setTask] = useState("");
   const [color, setColor] = useState<Color>("bg-red-500");
   const [isButtonActive, setIsButtonActive] = useState(true);
-  const changeColor=(getColor:Color)=>{
+  const changeColor:React.Dispatch<React.SetStateAction<Color>>=(getColor)=>{
     setColor(getColor)
     console.log(color)
   }
